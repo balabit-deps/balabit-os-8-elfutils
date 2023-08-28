@@ -1,3 +1,16 @@
+elfutils (0.176-1.1ubuntu0.1) focal-security; urgency=medium
+
+  * SECURITY UPDATE: infinite loop via a crafted file
+    - debian/patches/CVE-2021-33294.patch: fix bounds checks and replace
+      asserts with errors in src/readelf.c.
+    - CVE-2021-33294
+  * SECURITY UPDATE: heap-based buffer overwrite and reachable assertion 
+    - debian/patches/CVE-2020-21047.patch: fix bounds checks and replace
+      asserts with errors in libcpu/i386_data.h and libcpu/i386_disasm.c.
+    - CVE-2020-21047
+
+ -- Camila Camargo de Matos <camila.camargodematos@canonical.com>  Mon, 28 Aug 2023 14:26:02 -0300
+
 elfutils (0.176-1.1build1) focal; urgency=medium
 
   * No-change rebuild to restore the i386 binaries.

@@ -12,3 +12,5 @@ ignore_strmerge.diff
 disable_werror.patch
 mips_cfi.patch
 riscv-retval-workaround.patch
+CVE-2020-21047.patch
+CVE-2021-33294.patch
